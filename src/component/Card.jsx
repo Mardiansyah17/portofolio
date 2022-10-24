@@ -1,6 +1,6 @@
 import React from "react";
 
-export default function CardSkill({ img, title, fade, delay }) {
+export default function Card({ img, title, fade, delay }) {
   return (
     <div
       data-aos={`fade-${fade}`}

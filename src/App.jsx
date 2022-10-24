@@ -14,7 +14,7 @@ function App() {
   }, []);
 
   return (
-    <div className="bg-white dark:bg-slate-900 transition-all duration-300 pb-5 overflow-x-hidden w-screen">
+    <div className="bg-white dark:bg-slate-900 transition-all duration-300 pb-5 overflow-x-hidden">
       <Nav />
       <Hero />
       <Content />

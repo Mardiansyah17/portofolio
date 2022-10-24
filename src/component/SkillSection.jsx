@@ -1,5 +1,5 @@
 import React from "react";
-import CardSkill from "./CardSkill";
+import Card from "./Card";
 
 import taildiwndLogo from "../../src/assets/img/tailwind.svg";
 import reactLogo from "../../src/assets/img/react.svg";
@@ -13,27 +13,22 @@ export default function SkillSection() {
     <>
       <h1 className="mb-5 text-center text-sky-600 text-2xl ">My Skills</h1>
       <div className=" grid place-items-center grid-cols-2 ">
-        <CardSkill
+        <Card
           img={taildiwndLogo}
           title="TailwindCss"
           fade={"right"}
           delay="100"
         />
-        <CardSkill
+        <Card
           img={javascriptLogo}
           title="JavaScript"
           fade={"left"}
           delay="200"
         />
-        <CardSkill img={reactLogo} title="ReactJs" fade={"right"} delay="300" />
-        <CardSkill img={phpLogo} title="PHP" fade={"left"} delay="400" />
-        <CardSkill
-          img={laravelLogo}
-          title="Laravel"
-          fade={"right"}
-          delay="500"
-        />
-        <CardSkill img={nodeLogo} title="NodeJs" fade={"left"} delay="600" />
+        <Card img={reactLogo} title="ReactJs" fade={"right"} delay="300" />
+        <Card img={phpLogo} title="PHP" fade={"left"} delay="400" />
+        <Card img={laravelLogo} title="Laravel" fade={"right"} delay="500" />
+        <Card img={nodeLogo} title="NodeJs" fade={"left"} delay="600" />
       </div>
     </>
   );
