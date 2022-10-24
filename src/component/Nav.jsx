@@ -10,7 +10,7 @@ export default function Nav() {
       : setDark(false);
   }, [dark]);
   function toggleDarkMode() {
-    console.log(document.documentElement.classList.toggle("dark"));
+    document.documentElement.classList.toggle("dark");
     document.documentElement.classList[0] == "dark"
       ? setDark(true)
       : setDark(false);
@@ -32,9 +32,6 @@ export default function Nav() {
           />
         )}
       </span>
-      <button className="px-3 py-2 text-white rounded-lg bg-gradient-to-br from-blue-700 via-sky-600 to-green-500 hover:from-green-500 hover:to-yellow-500">
-        Contact me
-      </button>
     </div>
   );
 }
