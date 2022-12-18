@@ -18,7 +18,9 @@ function App() {
   return (
     <div className="bg-white dark:bg-slate-900 transition-all duration-300  overflow-x-hidden">
       <Nav />
-      <Hero />
+      <div className="h-screen flex flex-col justify-center ">
+        <Hero />
+      </div>
       <Content />
       <Footer />
     </div>
